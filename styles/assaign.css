@@ -128,7 +128,7 @@ nav{
 .pic{
   display: block;      
   margin: 0 auto;
-  border-radius: 48px;       
+       
 
   padding: 50px 150px 190px 150px;
 }
@@ -136,4 +136,26 @@ nav{
     background-color:#FFFFFF ;
     max-width: 1140px;
     gap: 200px;
+}
+/* code styles */
+.code-title{
+    font-weight: bold;
+    font-size: 79px;
+    color: #000000;
+}
+
+.code-bar{
+    display: flex;
+    gap: 100px;
+    
+}
+section input[type="email"], section input[type="text"], section textarea{
+    height: 40px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: block;
+    width: 80%;
+    padding: 20px 300px 20px 32px;
+    margin-bottom: 20px;
+    
 }
