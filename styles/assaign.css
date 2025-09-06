@@ -1,7 +1,8 @@
 /* header */
 .header{
     background-image: url(../Assets/Hero-bg.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    
 }
 .about{
     text-align: center;
@@ -65,7 +66,6 @@ nav{
 .banner-profile-pic{
     width: 400px;
     border-radius: 48px;
-
 }
 /* section styles */
 .section-content{
@@ -111,7 +111,9 @@ nav{
 }
 .skill-container{
     display: flex;
+    align-items: center;
     gap: 24px  ;
+    justify-content: center;
 }
 /* photo styles */
 .photo-title{
@@ -122,20 +124,25 @@ nav{
 .photo-description{
    color: rgba(0, 0, 0, 0.5);
 }
-.photo{
-   text-align: center;
+.main {
+    background-color:#FFFFFF ;
+    gap: 100px;
 }
-.pic{
+
+.photo {
+    display: flex;
+    flex-direction: column; /* stack title, description, button */
+    align-items: center; /* center horizontally */
+    text-align: center; /* align text center */
+    gap: 10px;
+}
+
+.pic {
   display: block;      
   margin: 0 auto;
        
 
   padding: 50px 150px 190px 150px;
-}
-.main{
-    background-color:#FFFFFF ;
-    max-width: 1140px;
-    gap: 200px;
 }
 /* code styles */
 .code-title{
@@ -150,7 +157,7 @@ nav{
     
 }
 section input[type="email"], section input[type="text"], section textarea{
-    height: 40px;
+    height: 40;
     border-radius: 10px;
     background-color: #FFFFFF;
     display: block;
